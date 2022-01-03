@@ -15,5 +15,6 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - run: rustc main.rs
-      - run: ./main
+      - uses: actions-rs/cargo@v1
+        with:
+          command: build
