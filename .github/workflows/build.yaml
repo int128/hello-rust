@@ -18,4 +18,4 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: build
-      - run: target/debug/hello-rust foo
+      - run: target/debug/hello-rust 100 200
